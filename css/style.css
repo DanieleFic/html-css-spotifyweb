@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Gotham', sans-serif;
 }
 
 main{
@@ -34,6 +35,7 @@ nav{
     border: 1px solid white;
     padding: 15px 35px;
     border-radius: 30px;
+    margin: 10px;
 }
 
 footer{
@@ -44,10 +46,13 @@ footer{
 }
 
 .navigatore{
-    height: 80%;
+    position: absolute;
+    width: 50px;
+    height: 75%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
 }
 
 .top-nav{
@@ -84,4 +89,19 @@ footer{
     font-size: 85%;
     color: grey;
     padding: 5px;
+}
+
+.lista-top{
+    width: 70vw;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    color: gray;
+    font-size: 10px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.lista-top li{
+    display: inline-block;
+    padding: 10px;
 }
