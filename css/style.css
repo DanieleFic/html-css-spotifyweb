@@ -19,6 +19,9 @@ nav{
 .upgrade{
     width: calc(100vw - 50px);
     height: 75px;
+    position: absolute;
+    top: 0;
+    right: 0;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -80,5 +83,5 @@ footer{
 .far{
     font-size: 85%;
     color: grey;
-    padding: 7px;
+    padding: 5px;
 }
