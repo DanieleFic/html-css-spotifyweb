@@ -4,7 +4,81 @@
     box-sizing: border-box;
 }
 
+main{
+    background-color: rgb(20, 25, 24) ;
+    width: 100vw;
+    height: calc(100vh - 120px ) ;
+}
+
 nav{
-    width: 30%;
-    height: 30%;
+    height: 100vh;
+    width: 50px;
+    background-color: black;
+}
+
+.upgrade{
+    width: calc(100vw - 50px);
+    height: 75px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgb(8, 11, 18);
+}
+
+.upgrade button{
+    color: white;
+    background-color: rgb(8, 11, 18);
+    border: 1px solid white;
+    padding: 15px 35px;
+    border-radius: 30px;
+}
+
+footer{
+    position: absolute;
+    height: 120px;
+    width: 100vw;
+    background-color: gray;
+}
+
+.navigatore{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.top-nav{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.bottom-nav{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+.contenitore-nav img{
+    width: 100%;
+    padding: 10px;
+}
+
+.navigatore p{
+    color: white;
+    display: none;
+}
+.fas{
+    padding: 5px;
+    font-size: 150%;
+    color: grey;
+}
+.far{
+    font-size: 85%;
+    color: grey;
+    padding: 7px;
 }
