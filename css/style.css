@@ -12,11 +12,11 @@ body{
 main{
     background-color: rgb(20, 25, 24) ;
     width: 100vw;
-    height: calc(100vh - 120px );
+    height: calc(100vh - 10vh);
 }
 
 aside{
-    height: calc(100vh - 120px);
+    height: calc(100vh - 10vh);
     width: 50px;
     background-color: black;
     float: left;
@@ -25,12 +25,12 @@ aside{
 }
 
 #main2{
-    height: calc(100vh - 120px );
+    height: calc(100vh - 10vh );
 }
 
 .upgrade{
     width: calc(100vw - 50px);
-    height: 15%;
+    height: 10%;
     position: fixed;
     float: left;
     display: flex;
@@ -41,7 +41,7 @@ aside{
 
 .upgrade button{
     color: white;
-    background-color: rgb(8, 11, 18);
+    background-color: rgba(8, 11, 18, 0.2);
     border: 1px solid white;
     padding: 15px 35px;
     border-radius: 30px;
@@ -115,7 +115,7 @@ aside{
     color: grey;
     font-size: 10px;
     font-weight: 900;
-    margin-top: 30%;
+    margin-top: 23%;
 }
 .lista-top li{
     display: inline-block;
@@ -175,7 +175,89 @@ aside{
 
 footer{
     position: fixed;
-    height: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 10vh;
     width: 100vw;
-    background-color: gray;
+    background-color: rgb(40, 40, 40);
 }
+
+.left-side,
+.right-side{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.center{
+    height: 100%;
+    width: 50%;
+}
+
+.left-side img{
+    width: 90%;
+    height: 100%;
+    padding-left: 15%;
+}
+.imgbot{
+    width: 33%;
+}
+
+.left-side1{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    font-size: 9px;
+    color: white;
+    font-weight: 900;
+}
+
+.left-side1 span{
+    font-size: 6px;
+    color: grey;
+}
+
+.icon{
+    font-size: 10px;
+    width: 33%;
+    padding-left: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.center .far, .fas{
+    color: white;
+}
+.center-icon{
+    font-size: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.center .far{
+    font-size: 260%;
+}
+
+.right-side{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.right-side i {
+    font-size: 10px;
+}
+
