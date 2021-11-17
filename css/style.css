@@ -5,22 +5,32 @@
     font-family: 'Gotham', sans-serif;
 }
 
+body{
+    overflow: hidden;
+}
+
 main{
     background-color: rgb(20, 25, 24) ;
     width: 100vw;
     height: calc(100vh - 120px );
 }
 
-nav{
+aside{
     height: calc(100vh - 120px);
     width: 50px;
     background-color: black;
     float: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+#main2{
+    height: calc(100vh - 120px );
 }
 
 .upgrade{
     width: calc(100vw - 50px);
-    height: 75px;
+    height: 15%;
     float: left;
     display: flex;
     justify-content: flex-end;
@@ -38,31 +48,33 @@ nav{
 }
 
 footer{
-    position: absolute;
+    position: fixed;
     height: 120px;
     width: 100vw;
     background-color: gray;
 }
 
+.contenitore-nav{
+    width: 100%;
+}
+
 .navigatore{
-    position: absolute;
+    float: right;
     width: 50px;
-    height: 75%;
+    height: 88%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
 .top-nav{
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
 }
 .bottom-nav{
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -73,6 +85,11 @@ footer{
 .contenitore-nav img{
     width: 100%;
     padding: 10px;
+}
+
+.top-nav img,
+.bottom-nav img{
+    width: 200%;
 }
 
 .navigatore p{
@@ -91,15 +108,59 @@ footer{
 }
 
 .lista-top{
-    width: 90%;
     text-align: center;
-    float: left;
-    color: red;
-    font-size: 10px;
+    color: grey;
+    font-size: 13px;
     font-weight: 900;
     text-transform: uppercase;
 }
 .lista-top li{
     display: inline-block;
-    padding: 10px;
+    padding: 15px 10px;
+}
+
+
+#profile{
+    background-color: grey;
+    border-radius: 100%;
+}
+
+.box-song{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#testo-menu{
+    color: white;
+    padding: 3%  1.5%;
+}
+
+.main-song{
+    float: left;
+    width: 50%;
+}
+
+.main-song img{
+    width: 95%;
+    padding: 2% 3%;
+}
+.main-song h4 {
+    color: white;
+    padding: 1% 3%;
+    text-align: center;
+}
+.main-song h6 {
+    color: grey;
+    padding: 1% 3%;
+    text-align: center;
+}
+
+#main2{
+    overflow-y: auto;
+}
+#main2 p{
+    color: grey;
+    font-weight:700;
+    font-size: 13px;
 }
