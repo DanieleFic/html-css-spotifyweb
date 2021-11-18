@@ -12,9 +12,16 @@ li{
     list-style: none;
 }
 
+li:hover{
+    list-style: none;
+    color: white;
+}
+
 a{
     text-decoration: none;
 }
+
+
 
 main{
     background-color: rgb(20, 25, 24) ;
@@ -67,6 +74,15 @@ footer{
 }
 
 .upgrade button{
+    transition: 1.5s;
+}
+
+.upgrade button:hover{
+    transform: scale(1.1);
+    
+}
+
+.upgrade button{
     color: white;
     background-color: rgba(8, 11, 18, 0.2);
     border: 1px solid white;
@@ -98,11 +114,15 @@ footer{
 }
 .bottom-nav{
     width: 100%;
-    height: 36.5%;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+}
+
+.bottom-nav > ul li{
+    padding: 3px;
 }
 
 #logowebapp{
@@ -136,6 +156,10 @@ footer{
     border-bottom: 2px solid greenyellow;
 }
 
+#evidenza1{
+    border-left: 3px solid greenyellow;
+}
+
 .navigatore p{
     color: white;
     display: none;
@@ -162,6 +186,11 @@ footer{
 .lista-top li{
     display: inline-block;
     padding: 10px 10px;
+    color: gray;
+}
+
+.lista-top li:hover{
+    color: white;
 }
 
 .lista-noone{
@@ -177,7 +206,7 @@ footer{
 
 #testo-menu{
     color: white;
-    padding: 3%  0 1% 1%;
+    padding: 5%  0 1% 1%;
 }
 
 .main-song{
@@ -214,6 +243,19 @@ footer{
 
 .img-circle img{
     border-radius: 50%;
+}
+
+.fa-play-circle{
+    transition: 1s;
+}
+
+.fa-play-circle:hover{
+    transform: scale(1.2);
+}
+
+.fa-heart:hover,
+.fa-folder:hover{
+    color: white;
 }
 
 
@@ -477,8 +519,12 @@ footer{
     }
     
     .navigatore p{
-        color: white;
+        color: gray;
         display: inline-block;
+    }
+
+    .navigatore p:hover{
+        color: white;
     }
 
     h3{
@@ -528,6 +574,16 @@ footer{
     .profile p{
         font-weight: 900;
     }
+
+    .left-side1 p{
+        font-size: 15px;
+        color: white
+    }
+
+    .left-side1 span{
+        font-size: 15px;
+        color: grey;
+    }
 }
 
 
@@ -571,7 +627,7 @@ footer{
         color: grey;
         font-size: 10px;
         font-weight: 900;
-        padding-top: 7%;
+        padding-top: 8.5%;
     }
 
     .main-song h4 {
