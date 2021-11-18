@@ -11,22 +11,49 @@
 </head>
 <body>
     <!--corpo pagina-->
-    <main>
+    <main class="clearfix">
         <!--navigatore sinistra pagina-->
         <nav>
             <aside>
-                <div class="contenitore-nav">
-                    <img id="none1" src="img/logo-small.svg" alt="">
-                    <img  id=none2 src="img/logo.svg" alt="">
+                <div class="contenitore-nav"> 
                     <div class="navigatore">
                         <div class="top-nav">
-                            <img src="img/home.svg" alt=""> <p>Home</p>
-                            <img src="img/search.svg" alt=""> <p>Cerca</p>
-                            <img src="img/libreria.svg" alt=""> <p>La Tua Liberia</p>
+                            <a href=""><img id="logowebapp" src="img/logo-small.svg" alt=""></a>
+                            <img id=logodesktop src="img/logo.svg" alt="">
+                            <section class="lista">
+                                <ul>
+                                    <a href=""><li><img src="img/home.svg" alt=""><p>Home</p></li></a>
+                                    <a href=""><li><img src="img/search.svg" alt=""> <p>Cerca</p></li></a>
+                                    <a href=""><li><img src="img/libreria.svg" alt=""> <p>La Tua Liberia</p></li></a>
+                                </ul>
+                                <div class="lista-noone">
+                                <h3>PLAYLIST</h3>
+                                <i class="fas fa-plus-square"></i><span>Crea Playlist</span>
+                                <ul class="lista-playlist">
+                                    <li>Nome Playlist</li>
+                                    <li>Nome Playlist</li>
+                                    <li>Nome Playlist</li>
+                                    <li>Nome Playlist</li>
+                                    <li>Nome Playlist</li>
+                                    <li>Nome Playlist</li>
+                                    <li>Nome Playlist</li>
+                                </ul>
+                            </div>
+                            </section>
                         </div>
                         <div class="bottom-nav">
-                            <img id="download" src="img/download.svg" alt=""></i>
-                            <img id="profile" src="img/profile.svg" alt=""></i>
+                            <ul>
+                                <li>
+                                    <a href=""><img id="download" src="img/download.svg" alt=""></i></a> <span class="none">Installa l'app</span>
+                                </li>
+                                
+                                <li>
+                                    <div class="profile">
+                                        <a href=""><img id="profile" src="img/profile.svg" alt=""></i></a> <span class="none">Jhon Doe</span>
+                                </li>
+                            
+                                </div>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -112,7 +139,7 @@
     <footer>
         <div class="left-side">
             <div class="imgbot">
-                <img src="img/sinister.jpeg" alt="">
+                <a href=""><img src="img/sinister.jpeg" alt=""></a>
             </div>
             <div class="left-side1">
                 <p>Sinister</p>
@@ -127,22 +154,33 @@
         
         <div class="center">
             <div class="center-icon">
-                <i class="fas fa-random"></i>
-                <i class="fas fa-step-backward"></i>
-                <i class="far fa-play-circle"></i>
-                <i class="fas fa-step-forward"></i>
-                <i class="fas fa-redo"></i>
+                <a href=""><i class="fas fa-random"></i></a>
+                <a href=""><i class="fas fa-step-backward"></i></a>
+                <a href=""><i class="far fa-play-circle"></i></a>
+                <a href=""><i class="fas fa-step-forward"></i></a>
+                <a href=""><i class="fas fa-redo"></i></a>
             </div>
-            <div class="volumebar">
-                <div class="bar">
-
+            
+            <div class="contenitore-bar">
+                <div class="volumebar">
+                    <div class="bar">
+                        <div class="focusbar">
+                        </div>
+                    </div>
                 </div>
             </div>
+            
         </div>
         <div class="right-side">
-            <i class="fas fa-list-ul"></i>
-            <i class="fas fa-desktop"></i>
-            <i class="fas fa-volume-up"></i>
+            <a href=""><i class="fas fa-list-ul"></i></a>
+            <a href=""><i class="fas fa-desktop"></i></a>
+            <a href=""><i class="fas fa-volume-up"></i></a>
+            <div class="volumebar-right">
+                <div class="bar">
+                    <div class="focusbar">
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 </body>

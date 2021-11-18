@@ -1,35 +1,53 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Gotham', sans-serif;
+    box-sizing: border-box; 
 }
 
 body{
-    overflow: hidden;
+    font-family: 'Gotham', sans-serif;
+}
+
+li{
+    list-style: none;
 }
 
 main{
     background-color: rgb(20, 25, 24) ;
-    width: 100vw;
-    height: calc(100vh - 10vh);
+    width: 100%;
+    height: calc(100vh - 90px);
 }
 
-#none2 {
+nav{
+    height: 100%;
+    width: 50px;
+    float: left;
+}
+aside{
+    height: 100%;
+    width: 50px;
+    background-color: black; 
+}
+
+#logodesktop {
     display: none;
 } 
 
-aside{
-    height: calc(100vh - 10vh);
-    width: 50px;
-    background-color: black;
+#main2{
     float: left;
-    display: flex;
-    justify-content: space-between;
+    height: 100%;
+    width: calc(100% - 50px);
 }
 
-#main2{
-    height: calc(100vh - 10vh );
+footer{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 90px;
+    width: 100vw;
+    background-color: rgb(40, 40, 40);
+    z-index: 2;
 }
 
 .upgrade{
@@ -53,43 +71,57 @@ aside{
     margin: 10px;
 }
 
+.none{
+    display: none;
+}
 
 .contenitore-nav{
     width: 100%;
+    height: 100%;
 }
 
 .navigatore{
     float: right;
     width: 50px;
-    height: 88%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    height: 92%;  
 }
 
 .top-nav{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    width: 100%;
+    height: calc(100% - 36.5%);
+    overflow-y: hidden;
+    
 }
 .bottom-nav{
+    width: 100%;
+    height: 36.5%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+}
+
+#logowebapp{
+    width: 45px;
+    padding: 7px;
     
 }
 
-.contenitore-nav img{
-    width: 100%;
-    padding: 10px;
+.top-nav img{
+    width: 40px;
+    padding: 5px;
 }
 
-.top-nav img,
-.bottom-nav img{
-    width: 200%;
+#download{
+    width: 15px;
+    padding-bottom: 5px;
+}
+
+.profile{
+    width: 25px;
+    height: 25px;
+    background-color: grey;
+    border-radius: 50%;
 }
 
 #evidenza{
@@ -120,18 +152,17 @@ aside{
     color: grey;
     font-size: 10px;
     font-weight: 900;
-    padding-top: 13%;
+    padding-top: 16%;
 }
 .lista-top li{
     display: inline-block;
     padding: 10px 10px;
 }
 
-
-#profile{
-    background-color: grey;
-    border-radius: 100%;
+.lista-noone{
+    display: none;
 }
+
 
 .box-song{
     display: flex;
@@ -166,6 +197,8 @@ aside{
 
 #main2{
     overflow-y: auto;
+    width: calc(100% - 50px);
+    float: left;
 }
 #main2 p{
     color: grey;
@@ -178,16 +211,7 @@ aside{
     border-radius: 50%;
 }
 
-footer{
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 10vh;
-    width: 100vw;
-    background-color: rgb(40, 40, 40);
-    z-index: 2;
-}
+
 
 .left-side,
 .right-side{
@@ -196,11 +220,6 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items:center;
-}
-
-.center{
-    height: 100%;
-    width: 50%;
 }
 
 .left-side img{
@@ -237,18 +256,23 @@ footer{
 }
 
 .center{
+    height: 100%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .center .far, .fas{
     color: white;
 }
 .center-icon{
+    width: 70%;
     font-size: 45%;
+    padding-bottom: 15px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -267,10 +291,52 @@ footer{
     font-size: 10px;
 }
 
-@media (min-width: 768px)
+.contenitore-bar{
+    width: 70%;
+}
+
+.volumebar{
+    width: 100%;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.volumebar-right{
+    width: 45%;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+.bar{
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 20%;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.volumebar:hover .bar{
+    background-color: green;
+}
+
+.focusbar{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: white;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+@media screen and (min-width: 768px)
 {
     aside{
-        height: calc(100vh - 10vh);
+        height: 100%;
         width: 250px;
         background-color: black;
         float: left;
@@ -278,17 +344,56 @@ footer{
         justify-content: space-between;
     }
 
-    #none1 {
+    nav{
+        width: 250px;
+    }
+
+    #main2 {
+        overflow-y: auto;
+        width: calc(100% - 250px);
+        float: left;
+    }
+    
+    .lista-noone{
+        display: block;
+    }
+
+    .none{
+        display: block;
+    }
+    
+
+    .top-nav{
+        width: 100%;
+        height: calc(100% - 80px);
+        overflow-y: hidden;
+        
+    }
+    .bottom-nav{
+        width: 100%;
+        height: 80px;
+        padding-left: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    .bottom-nav img{
+        vertical-align: middle;
+    }
+
+    .bottom-nav span{
+        color: white;
+    }
+
+    #logowebapp {
         display: none;
     }
-    #none2 {
+    #logodesktop {
         display: inline;
         width: 90%;
         padding: 10%;
-    } 
-    .contenitore-nav img{
-        width: 80%;
-        padding: 15% 10%;
     }
 
     .upgrade{
@@ -307,24 +412,53 @@ footer{
     }
     
     .navigatore{
-        float: left; 
+        width: 100%;
+        height: 100%;
     }
 
-    .top-nav{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        
+    li{
+        padding-left: 5%;
+        color: grey;
     }
-    .bottom-nav{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
+
+    li img{
+        vertical-align: middle;
     }
     
     .navigatore p{
         color: white;
         display: inline-block;
     }
-    
+
+    h3{
+        color: white;
+        padding: 5% 7%;
+        font-size: 15px;
+    }
+
+    .aaa{
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .lista span{
+        color: grey;
+        font-weight: 900;
+    }
+    .lista .fas{
+        font-size: 40px;
+        padding-left: 6%;
+        vertical-align: middle;
+        color: grey;
+    }
+
+    .lista-playlist{
+        color: grey;
+    }
+
+    .lista-playlist li{
+        font-weight: 900;
+        padding-top: 5%;
+    }
 }
