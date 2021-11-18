@@ -356,6 +356,8 @@ footer{
     
     .lista-noone{
         display: block;
+        overflow-y: auto;
+    
     }
 
     .none{
@@ -461,4 +463,33 @@ footer{
         font-weight: 900;
         padding-top: 5%;
     }
+}
+
+
+@media screen and (min-width: 992px)
+{
+
+    .main-song {
+        float: left;
+        width: 25%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
