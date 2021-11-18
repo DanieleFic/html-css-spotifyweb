@@ -122,6 +122,7 @@ footer{
     height: 25px;
     background-color: grey;
     border-radius: 50%;
+    overflow:hidden;
 }
 
 #evidenza{
@@ -218,12 +219,12 @@ footer{
     height: 100%;
     width: 25%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items:center;
 }
 
 .left-side img{
-    width: 90%;
+    width: 60%;
     height: 100%;
     padding-left: 15%;
 }
@@ -283,7 +284,7 @@ footer{
 .right-side{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 
@@ -292,7 +293,7 @@ footer{
 }
 
 .contenitore-bar{
-    width: 70%;
+    width: 55%;
 }
 
 .volumebar{
@@ -381,6 +382,47 @@ footer{
         align-items: flex-start;
     }
 
+    .bottom-nav li:first-child{
+        display: flex;
+        border-bottom: 1px solid gray;
+        padding-bottom: 5px;
+        width: 90%;
+        font-size: 13px;
+    }
+    
+    
+    .bottom-nav li{
+        display: flex;
+    }
+    
+    #download{
+        width: 15px;
+        padding: 0;
+    }
+    
+    
+    .none{
+        display: block;
+        padding-left: 3%;
+        }
+        
+    .bottom-nav img{
+        padding-right: 5%;
+        }
+    
+    
+    .bottom-nav ul{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    .bottom-nav li{
+        display: flex;
+    }
+
     .bottom-nav img{
         vertical-align: middle;
     }
@@ -462,6 +504,7 @@ footer{
     .lista-playlist li{
         font-weight: 900;
         padding-top: 5%;
+        font-size: 13px;
     }
 }
 
@@ -474,11 +517,28 @@ footer{
         width: 25%;
     }
 
+    .contenitore-bar{
+        width: 55%;
+    }
+    
+    .center-icon{
+        width: 40%;
+        font-size: 65%;
+        padding-bottom: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-
-
-
-
+    .icon{
+        font-size: 10px;
+        width: 33%;
+        padding-left: 3%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
 
 
 
