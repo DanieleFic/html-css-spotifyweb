@@ -240,17 +240,18 @@ aside{
 #testo-menu{
     color: white;
     padding: 5%  0 1% 1%;
+    
 }
 
 .main-song{
     position: relative;
     float: left;
     width: 50%;
+    padding: 10px;
 }
 
 .main-song img{
-    width: 95%;
-    padding: 2% 3%;
+    width: 100%;
 }
 .main-song h4 {
     color: white;
@@ -470,7 +471,6 @@ footer{
         color: grey;
         font-size: 15px;
         font-weight: 700;
-        padding-top: 30%;
     }
 }
 
