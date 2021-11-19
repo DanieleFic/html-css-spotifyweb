@@ -443,8 +443,8 @@ footer{
 .volumebar-right:hover .bar{
     background-color: green;
 }
-/* MEDIA QUERY  BONUS HEIGHT 350PX */
-@media screen and (max-height: 350px)
+/* MEDIA QUERY  BONUS HEIGHT 350PX 
+@media screen and (max-height:450px) and (width:768px)
 {
     .box-song{
         display: none;
@@ -469,7 +469,23 @@ footer{
         font-size: 15px;
         font-weight: 700;
     }
+
+    nav{
+        height: 100%;
+        width: 50px;
+        float: left;
+    }
+    aside {
+        height: 100%;
+        width: 50px;
+        background-color: black;
+        float: left;
+        display: flex;
+        justify-content: space-between;
+    }
 }
+*/
+
 /* MEDIA QUERY  WIDTH 768PX */
 @media screen and (min-width: 768px)
 {
@@ -666,6 +682,7 @@ footer{
 /* MEDIA QUERY  WIDTH 992X */
 @media screen and (min-width: 992px)
 {
+
     .main-song {
         float: left;
         width: 25%;
