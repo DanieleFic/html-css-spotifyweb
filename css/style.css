@@ -254,7 +254,7 @@ aside{
 }
 .main-song h4 {
     color: white;
-    padding: 7% 3%;
+    padding: 3%;
     text-align: center;
 }
 .main-song h6 {
@@ -444,6 +444,34 @@ footer{
 
 .volumebar-right:hover .bar{
     background-color: green;
+}
+
+@media screen and (max-height: 350px)
+{
+    .box-song{
+        display: none;
+    }
+    
+    #testo-menu{
+        display: none;
+    }
+
+    .upgrade{
+        display: none;
+    }
+
+    p{
+        display:none;
+    }
+
+    .lista-top {
+        width: 100%;
+        text-align: center;
+        color: grey;
+        font-size: 15px;
+        font-weight: 700;
+        padding-top: 30%;
+    }
 }
 
 @media screen and (min-width: 768px)
@@ -688,7 +716,7 @@ footer{
 
     .main-song h4 {
         color: white;
-        padding: 7% 1%;
+        padding: 3%;
         text-align: center;
     }
 
@@ -696,5 +724,4 @@ footer{
         float: left;
         width: 16%;
     }
-
 }
