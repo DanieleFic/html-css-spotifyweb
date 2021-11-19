@@ -26,7 +26,7 @@ main{
     width: 100%;
     height: calc(100vh - 90px);
 }
-/* Navigatore laterale */
+/* NAVIGATORE  laterale sinistra */
 nav{
     height: 100%;
     width: 50px;
@@ -131,7 +131,7 @@ aside{
     margin: 10px;
 }
 
-/* Main pagina ( Canzoni) */
+/* MAIN pagina ( Canzoni) */
 #main2{
     float: left;
     height: 100%;
@@ -228,7 +228,6 @@ aside{
     transform: translate(-50%, -50%);
     text-align: center;
 }
-
 
 
 .box-song{
@@ -446,7 +445,7 @@ footer{
 .volumebar-right:hover .bar{
     background-color: green;
 }
-
+/* MEDIA QUERY  BONUS HEIGHT 350PX */
 @media screen and (max-height: 350px)
 {
     .box-song{
@@ -473,7 +472,7 @@ footer{
         font-weight: 700;
     }
 }
-
+/* MEDIA QUERY  WIDTH 768PX */
 @media screen and (min-width: 768px)
 {
     aside{
@@ -669,7 +668,7 @@ footer{
     }
 }
 
-
+/* MEDIA QUERY  WIDTH 992X */
 @media screen and (min-width: 992px)
 {
 
@@ -701,7 +700,7 @@ footer{
         align-items: flex-start;
     }
 }
-
+/* MEDIA QUERY  WIDTH 1200PX */
 @media screen and (min-width: 1200px)
 {
     .lista-top{
